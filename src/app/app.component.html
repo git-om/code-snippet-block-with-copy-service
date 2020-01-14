@@ -1,0 +1,17 @@
+<h1>{{title}}</h1>
+<p>
+  Displaying the code of an element through <strong>reference</strong>.
+</p>
+
+<div class="button-wrapper">
+  <button #buttonsRefs class="btn btn-primary">Primary</button>
+  <button #buttonsRefs class="btn btn-primary">Secondary</button>
+  <button #buttonsRefs class="btn btn-primary">tertiary</button>
+  <button #buttonsRefs class="btn btn-primary">Disabled</button>
+</div>
+
+<div class="code-snippet-area">
+  <app-snippet-block>
+  <pre class="prettyprint lang-html"><code app-snippet><div *ngFor="let button of buttonList">{{button.nativeElement.outerHTML}}</div></code></pre>
+</app-snippet-block>
+</div>

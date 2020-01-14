@@ -1,0 +1,7 @@
+<button #btn class="copy-button btn btn-tertiary"
+    ngxClipboard
+    [cbContent]="codeRef?.innerText"
+    (cbOnSuccess)="onCopyHandler();btn.focus()"
+    [class.btn-copy]="codeCopied" >
+    {{codeCopied ? 'Copied' : 'Copy'}}
+ </button>

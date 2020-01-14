@@ -1,0 +1,68 @@
+body {
+  font-family: Lato;
+}
+
+.button-wrapper {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 48px;
+}
+
+:not(pre)>code[class*="language-"],
+pre[class*="language-"] {
+  background: #f7f7f7 !important;
+}
+
+pre.prettyprint {
+  display: block;
+  padding: 16px 60px 16px 16px !important;
+  margin: 0 !important;
+  max-height: 224px !important;
+  font-size: 14px !important;
+  line-height: 24px !important;
+  color: #000 !important;
+  word-break: break-all !important;
+  word-wrap: break-word !important;
+  background-color: #f7f7f7 !important;
+  border: 1px solid #e5e5e5 !important;
+  border-radius: 4px !important;
+  overflow-x: hidden !important;
+  code {
+      padding: 0 !important;
+      font-size: 14px !important;
+      color: inherit !important;
+      white-space: pre-wrap !important;
+      background-color: transparent !important;
+      border-radius: 0 !important;
+  }
+}
+
+.copiedtxt {
+  background: #f00;
+}
+
+
+.code-snippet-area {
+  display: flex;
+  position: relative;
+  & button {
+      position: absolute;
+      top: 0.6rem;
+      right: 2.5rem;
+      display: block;
+      padding: 0.25rem 0.5rem;
+      cursor: pointer;
+      border: 0;
+      border-radius: 0.25rem;
+      font-size: 14px;
+  }
+}
+
+.btn-copy {
+  background: gray;
+  color: white;
+  &:hover {
+      background: gray;
+      color: white;
+  }
+}
