@@ -1,4 +1,4 @@
-import { Component, OnInit, Input, ElementRef, OnDestroy } from '@angular/core';
+import { Component, OnInit, Input, ElementRef, OnDestroy, Inject } from '@angular/core';
 import { SnippetBlockService } from '../snippet-block.service';
 import { Subscription } from 'rxjs';
 
@@ -17,7 +17,7 @@ export class CopyButtonComponent implements OnInit, OnDestroy {
 
   public codeCopied: boolean = false;
 
-  constructor(private snippetBlockService: SnippetBlockService) { }
+  constructor( @Inject(SnippetBlockService) private snippetBlockService: SnippetBlockService) { }
 
   ngOnInit() {
     this.buttonUuid = this.generateUuid();
