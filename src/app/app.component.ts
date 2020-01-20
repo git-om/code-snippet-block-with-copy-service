@@ -7,7 +7,7 @@ import { Component, ViewChildren, ElementRef, AfterViewInit, QueryList, ViewEnca
   encapsulation: ViewEncapsulation.None
 })
 export class AppComponent implements AfterViewInit {
-  title = 'copycodesnippet';
+  title = 'Copy Codesnippet';
   name = 'Automating Code Snippets';
   public buttonList: ElementRef[] = [];
 
